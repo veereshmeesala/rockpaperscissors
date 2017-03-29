@@ -6,7 +6,7 @@ describe("main", function() {
 
         it("playGame called", function() {
             window.startplay.playGame();
-            assert.isNotNull(results, 'results is not null');
+            expect(results.to.not.equal(null));
         });
 
     });

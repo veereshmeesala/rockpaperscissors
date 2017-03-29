@@ -45,7 +45,14 @@ module.exports = {
           'css-loader!postcss!sass-loader?outputStyle=expanded'
         )
       }
-    ]
+    ],
+     rules: [
+            {
+                test: /\.js$/,
+                use: "babel-loader",
+                exclude: /(\/node_modules\/|test\.js|\.spec\.js$)/
+            }
+        ]
   },
 
   postcss: [
