@@ -11,59 +11,11 @@ export class Rockpaperscissors {
         this.init();
     }
 
-    // selectComputerPlayer() {
-    //     console.log("selectComputerPlayer");
-    //     this.computerChoice = Math.random();
-    //     if (this.computerChoice <= 0.24) {
-    //         this.computerChoice = "Rock";
-    //     } else if (this.computerChoice > 0.24 && this.computerChoice <= 0.50) {
-    //         this.computerChoice = "Paper";
-    //     } else {
-    //         this.computerChoice = "Scissors";
-    //     }
-    // }
-
     selectPlayer(event) {
         console.log("select player");
         this.userChoice = event.target.value;
         document.querySelector('#playerSelected').innerHTML = "Player selected : " + this.userChoice;
     }
-
-    // play(choice1, choice2) {
-    //     console.log("play");
-    //     choice1 = choice1.toLowerCase();
-    //     choice2 = choice2.toLowerCase();
-    //     if (choice1 === choice2) {
-    //         return "It's a tie!";
-    //     }
-    //     if (choice1 === "rock") {
-    //         if (choice2 === "scissors") {
-    //             // rock wins
-    //             return "You win!";
-    //         } else {
-    //             // paper wins
-    //             return "You lose! Try again.";
-    //         }
-    //     }
-    //     if (choice1 === "paper") {
-    //         if (choice2 === "rock") {
-    //             // paper wins
-    //             return "You win!";
-    //         } else {
-    //             // scissors wins
-    //             return "You lose! Try again.";
-    //         }
-    //     }
-    //     if (choice1 === "scissors") {
-    //         if (choice2 === "rock") {
-    //             // rock wins
-    //             return "You lose! Try again.";
-    //         } else {
-    //             // scissors wins
-    //             return "You win!";
-    //         }
-    //     }
-    // }
 
     playGame() {
         console.log("playGame");
